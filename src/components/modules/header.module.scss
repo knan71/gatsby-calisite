@@ -1,0 +1,88 @@
+.header {
+  padding: 0 0 3rem;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  margin: 1.1rem 2rem;
+  z-index: 1;
+}
+img {
+  width: 2.5rem;
+}
+/* navbar */
+.nav {
+  position: sticky;
+  background-color: transparent;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  top: 0;
+  z-index: 1;
+}
+
+.list-item {
+  display: inline-block;
+}
+
+.nav-item {
+  display: block;
+  text-align: center;
+  color: #5e5f5f;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  // border-bottom: 2px solid #fab980;
+  transition: all 0.4s ease-in-out;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding-right: 2rem;
+  margin-top: 1.3rem;
+}
+
+.nav-item:hover,
+.active-nav-item {
+  color: #fab980 !important;
+}
+
+/* stroke */
+.list-item .nav-item {
+  position: relative;
+  transition: all 0.4s ease-in-out;
+}
+
+.list-item .nav-item:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0% !important;
+  content: '.';
+  color: transparent;
+  background: #fab980;
+  height: 2px;
+}
+.list-item .nav-item:hover:after {
+  width: 100% !important;
+}
+
+.list-item .nav-item:after,
+.list-item .nav-item:before {
+  transition: all 0.4s;
+}
+.list-item .active-nav-item:after {
+  width: 100% !important;
+}

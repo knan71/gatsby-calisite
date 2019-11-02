@@ -1,0 +1,15 @@
+.imageWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  height: 100vh !important;
+  overflow: hidden;
+}
+
+img {
+  object-fit: cover !important;
+  object-position: center bottom !important;
+  //font-family: 'object-fit: cover !important; object-position: 0% 0% !important;'; // needed for IE9+ polyfill
+}

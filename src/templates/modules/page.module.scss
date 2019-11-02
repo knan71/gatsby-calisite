@@ -1,0 +1,30 @@
+h2 {
+  text-align: center;
+}
+
+h3 {
+  padding: 1rem 0;
+}
+
+.heading {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 35%;
+  padding: 0.5rem;
+  background-color: #74a6ae;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  box-shadow: 3px 2px 4px #5e5f5f;
+  box-sizing: border-box;
+}
+
+.page_title {
+  color: #fdb577;
+  margin-top: 1rem;
+}
+
+.page_date {
+  color: #fae7d6;
+  font-size: 12px;
+}
